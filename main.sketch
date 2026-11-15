@@ -1,0 +1,25 @@
+### Degrees
+Theta Dot = Th_dd & Th_d #we copying the teach
+Phi Dot = Ph_dd
+
+### Lengths
+L = Len_BarPW
+l = Len_BarCW
+h = Len_PenCW
+
+### Simples
+g = g #9.8 on earth, constant or variable
+M = Mass_CW
+m = Mass_PW
+Mb = Mass_Bar
+
+### Complicated (Function?)
+Ib = Inertia_bar = 1/3 * Mass_Bar ((Len_BarCW**3 + Len_BarPW**3)/(Len_BarPW + Len_BarlW))
+I = Mass_CW * Len_BarPW**2 + Mass_PW * Len_BarCW**2 + Inertia_bar
+V = Mass_CW * g * Len_BarPW - Mass_PW * g * l - 1/2 * Mass_CW * g * (Len_BarPW - Len_BarCW)
+
+
+I dot theta =Mlh dot phi sin( theta+ phi)+Mlh dot phi ^ 2 * cos(theta + phi) + V * cos(theta)
+h dot phi =l dot theta sin( theta+ phi)+l dot theta ^ 2 * cos(theta + phi) - g * sin(phi)
+
+
